@@ -58,20 +58,20 @@
   --form-submit-color-inverted: #bbc3ca;
 
   /* Background colors */
-  --logotype-background-color: #a9aaae;
-  --header-background-color: #cfd5e5;
+  --logotype-background-color: #000000;
+  --header-background-color: #6F90EB;
   --article-background-color: #dbdde3;
   --news-background-color: #dbdde3;
   --news-background-color-inverted: #eeebe9;
-  --info-background-color: #dbdde3;
+  --info-background-color: #FFFAE2;
   --headline-bg-color: #dbdde3;
-  --headline-bg-color-alert: #dbdde3;
-  --headline-bg-color-inverted: #dbdde3;
+  --headline-bg-color-alert: #FF4B00;
+  --headline-bg-color-inverted: #000000;
   --bodytext-bg-color: #dbdde3;
   --bodytext-bg-color-inverted: #dbdde3;
   --cta-text-bg-color: #dbdde3;
   --cta-text-bg-color-inverted: #dbdde3;
-  --followup-text-bg-color: #e8ebee;
+  --followup-text-bg-color: #FFFAE2;
   --followup-text-bg-color-inverted: #dbdde3;
   --form-background-color: #c5c7ce;
   --form-text-color: #dbdde3;
