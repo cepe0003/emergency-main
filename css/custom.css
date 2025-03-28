@@ -1,6 +1,6 @@
 :root {
   /* Colours */
-  --primary-bg-color: #e8ebee; /* used */
+  --primary-bg-color: #FCEB94; /* used */
   --primary-font-color: #474d52; /* used */
 
   --secondary-bg-color: #5d656c; /* used */
@@ -81,6 +81,6 @@
   --form-submit-bg-color-inverted: #dbdde3;
 
   /* Info-boxes */
-  --info-bg-color-yellow: #d6d5ce;
-  --info-bg-color-green: #a6a6a0;
+  --info-bg-color-yellow: #FCEB94;
+  --info-bg-color-green: #DEF5DB;
 }
