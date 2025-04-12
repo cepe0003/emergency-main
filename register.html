@@ -32,7 +32,166 @@
           <h2>Overskrift</h2>
           <p>Tekst</p>
         </article>
-        <form id="webform"></form>
+        <form id="webform">
+          <fieldset id="who">
+            <legend>Personlige oplysninger</legend>
+            <div>
+              <label for="fullname">Navn</label>
+              <input id="fullname" name="fullname" type="text" />
+            </div>
+            <div>
+              <label for="age">Alder</label>
+              <input type="number" name="age" id="age" />
+            </div>
+            <div>
+              <label for="training-select">Fortrukne træningstype</label>
+              <select name="training-select" id="training-select">
+                <option value="">--vælg træningstype--</option>
+                <option value="Cardio">Cardio</option>
+                <option value="Styrketræning">Styrketræning</option>
+                <option value="Udstrækning/Smidighed">
+                  Udstrækning/Smidighed
+                </option>
+              </select>
+            </div>
+          </fieldset>
+          <fieldset id="contact">
+            <legend>Kontaktoplysninger</legend>
+            <div>
+              <label for="phone">Telefonnummer</label>
+              <input type="tel" name="phone" id="phone" />
+            </div>
+            <div>
+              <label for="email">Mailadresse</label>
+              <input type="email" name="email" id="email" />
+            </div>
+          </fieldset>
+          <fieldset id="where">
+            <legend>Ulykkesstedet</legend>
+            <div>
+              <label for="place">Hvor har ulykken fundet sted?</label>
+              <select name="place" id="place">
+                <option value="">--vælg sted--</option>
+                <option value="Hjemme i køkkenet">Hjemme i køkkenet</option>
+                <option value="Fitnesscenteret">Fitnesscenteret</option>
+                <option value="Hos en ven">Hos en ven</option>
+                <option value="Hjemmetræningslokale">
+                  Hjemmetræningslokale
+                </option>
+                <option value="Egen have">Egen have</option>
+                <option value="Udendørstræningscenter">
+                  Udendørstræningscenter
+                </option>
+              </select>
+            </div>
+            <div>
+              <label for="adress">Adresse</label>
+              <input type="text" name="adress" id="adress" />
+            </div>
+            <div>
+              <label for="city">By</label>
+              <input type="text" name="city" id="city" />
+            </div>
+            <div>
+              <label for="zip">Postnummer</label>
+              <input type="tel" name="zip" id="zip" pattern="\d{4}" />
+            </div>
+          </fieldset>
+          <fieldset id="crisis">
+            <legend>Kriseinformation</legend>
+            <div>
+              <label for="situation">Beskriv krisesituationen</label>
+              <textarea
+                name="situation"
+                id="situation"
+                rows="5"
+                cols="50"
+              ></textarea>
+            </div>
+            <div>
+              <label for="people">Antal berørte personer</label>
+              <input type="number" name="people" id="people" />
+            </div>
+            <div>
+              <p>Er der nogen, der er kommet til skade?</p>
+              <label for="yes">Ja</label>
+              <input type="radio" name="yes" id="yes" />
+              <label for="no">Nej</label>
+              <input type="radio" name="no" id="no" />
+            </div>
+            <div>
+              <label for="amount">Hvis ja, hvor mange?</label>
+              <input type="number" name="amount" id="amount" />
+            </div>
+          </fieldset>
+          <fieldset id="popinfo">
+            <legend>Popcorn-relatierede oplysninger</legend>
+            <div>
+              <label for="popamount"
+                >Mængde af popcorn (pr. 100. popcornskerne)</label
+              >
+              <input
+                type="range"
+                name="popamount"
+                id="popamount"
+                min="0"
+                max="5650000"
+              />
+            </div>
+            <div id="poptype">
+              <p>Type(r) af popcorn</p>
+              <div>
+                <label for="poptype1">Saltet</label>
+                <input
+                  type="checkbox"
+                  id="poptype1"
+                  name="poptype1"
+                  value="Saltet"
+                />
+              </div>
+              <div>
+                <label for="poptype2">Karamel</label>
+                <input
+                  type="checkbox"
+                  id="poptype2"
+                  name="poptype2"
+                  value="Karamel"
+                />
+              </div>
+              <div>
+                <label for="poptype3">Light</label>
+                <input
+                  type="checkbox"
+                  id="poptype3"
+                  name="poptype3"
+                  value="Light"
+                />
+              </div>
+              <div>
+                <label for="poptype4">Smørsmag</label>
+                <input
+                  type="checkbox"
+                  id="poptype4"
+                  name="poptype4"
+                  value="Smørsmag"
+                />
+              </div>
+            </div>
+            <div>
+              <label for="popsource">Kilde til popcorn</label>
+              <select name="popsource" id="popsource">
+                <option value="">--vælg kilde--</option>
+                <option value="Popcornmaskine">Popcornmaskine</option>
+                <option value="Mikrobølgeovn">Mikrobølgeovn</option>
+                <option value="Gryde">Gryde</option>
+                <option value="Bål">Bål</option>
+                <option value="Færdigpoppede fra pose">
+                  Færdigpoppede fra pose
+                </option>
+              </select>
+            </div>
+          </fieldset>
+        </form>
       </section>
       <section id="form-summary">
         <h2>Summary</h2>
@@ -67,5 +226,6 @@
         </ul>
       </nav>
     </footer>
+    <script src="js/forms.js"></script>
   </body>
 </html>
