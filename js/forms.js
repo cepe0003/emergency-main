@@ -10,7 +10,7 @@ function updateValue() {
 
     popamountValue.textContent =slider.value;
 
-    if(slider.value > 0 && slider.value <5650000){
+    if(slider.value > 0 && slider.value <565000000){
         console.log (`mængden af popcornskerner er ${slider.value}`);
     }
 }
