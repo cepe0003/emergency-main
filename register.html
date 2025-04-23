@@ -62,8 +62,8 @@
               <input type="tel" name="phone" id="phone" />
             </div>
             <div>
-              <label for="email">Mailadresse</label>
-              <input type="email" name="email" id="email" />
+              <label for="mail">Mailadresse</label>
+              <input type="email" name="mail" id="mail" />
             </div>
           </fieldset>
           <fieldset id="where">
@@ -115,9 +115,9 @@
             <div>
               <p>Er der nogen, der er kommet til skade?</p>
               <label for="yes">Ja</label>
-              <input type="radio" name="yes" id="yes" />
+              <input type="radio" name="yes_no" id="yes" />
               <label for="no">Nej</label>
-              <input type="radio" name="no" id="no" />
+              <input type="radio" name="yes_no" id="no" />
             </div>
             <div>
               <label for="amount">Hvis ja, hvor mange?</label>
@@ -128,7 +128,8 @@
             <legend>Popcorn-relatierede oplysninger</legend>
             <div>
               <label for="popamount"
-                >Mængde af popcorn (pr. 100. popcornskerne)</label
+                >Mængde af popcorn (pr. 100. popcornskerne)
+                <span id="range-value">0</span> popcornskerner</label
               >
               <input
                 type="range"
@@ -136,6 +137,7 @@
                 id="popamount"
                 min="0"
                 max="5650000"
+                value="0"
               />
             </div>
             <div id="poptype">
@@ -145,7 +147,7 @@
                 <input
                   type="checkbox"
                   id="poptype1"
-                  name="poptype1"
+                  name="poptype"
                   value="Saltet"
                 />
               </div>
@@ -154,7 +156,7 @@
                 <input
                   type="checkbox"
                   id="poptype2"
-                  name="poptype2"
+                  name="poptype"
                   value="Karamel"
                 />
               </div>
@@ -163,7 +165,7 @@
                 <input
                   type="checkbox"
                   id="poptype3"
-                  name="poptype3"
+                  name="poptype"
                   value="Light"
                 />
               </div>
@@ -172,7 +174,7 @@
                 <input
                   type="checkbox"
                   id="poptype4"
-                  name="poptype4"
+                  name="poptype"
                   value="Smørsmag"
                 />
               </div>
@@ -191,12 +193,73 @@
               </select>
             </div>
           </fieldset>
+          <button id="submit_btn" type="button">Indsend</button>
         </form>
       </section>
       <section id="form-summary">
         <h2>Summary</h2>
-        <article>
-          <p class="placeholder">Opsummering</p>
+        <article id="sum">
+          <div>
+            <h3>Navn:</h3>
+            <p id="sumName"></p>
+          </div>
+          <div>
+            <h3>Alder:</h3>
+            <p id="sumAge"></p>
+          </div>
+          <div>
+            <h3>Træningstype:</h3>
+            <p id="sumTraining"></p>
+          </div>
+          <div>
+            <h3>Telefonnummer:</h3>
+            <p id="sumNumber"></p>
+          </div>
+          <div>
+            <h3>Mailadresse:</h3>
+            <p id="sumMail"></p>
+          </div>
+          <div>
+            <h3>Ulykkessted:</h3>
+            <p id="sumPlace"></p>
+          </div>
+          <div>
+            <h3>Adresse:</h3>
+            <p id="sumAdress"></p>
+          </div>
+          <div>
+            <h3>By:</h3>
+            <p id="sumCity"></p>
+          </div>
+          <div>
+            <h3>Postnummer:</h3>
+            <p id="sumZip"></p>
+          </div>
+          <div>
+            <h3>Beskrivelse af situationen:</h3>
+            <p id="sumSituation"></p>
+          </div>
+          <div>
+            <h3>Antal berørte personer:</h3>
+            <p id="sumPeople"></p>
+          </div>
+          <div>
+            <h3>Antal tilskadekomne:</h3>
+            <p id="sumAmount"></p>
+          </div>
+          <div>
+            <h3>Popcornmængde:</h3>
+            <p id="sumPopamount"></p>
+          </div>
+          <div>
+            <h3>Type af popcorn:</h3>
+            <p id="sumType"></p>
+          </div>
+          <div>
+            <h3>Kilde:</h3>
+            <p id="sumSource"></p>
+          </div>
+          <button id="reset_btn">Godkend og luk</button>
         </article>
       </section>
     </main>
