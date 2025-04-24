@@ -2,6 +2,7 @@
   background-color: var(--form-background-color);
 }
 
+
 #form-section,
 #form-summary {
   background-color: var(--info-background-color);
@@ -30,3 +31,11 @@
   margin: 0 0 1.2rem 0;
   padding: 0;
 }
+input,textarea {
+  font-family: var(--body-font);
+  font-size: 12px;
+  
+}
+/* fieldset {
+border: none;
+} */

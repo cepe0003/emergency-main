@@ -16,10 +16,6 @@ body {
   color: var(--primary-font-color);
   background-color: var(--primary-bg-color);
 }
-input,textarea {
-  font-family: var(--body-font);
-  font-size: 12px;
-}
 header,
 footer {
   background-color: var(--header-background-color);
