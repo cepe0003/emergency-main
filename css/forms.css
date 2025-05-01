@@ -15,6 +15,7 @@
   color: var(--headline-color-inverted);
   padding-top: 5px;
 }
+
 #form-summary h3 {
   font-size: 0.8rem;
   line-height: 0.8rem;
@@ -35,6 +36,13 @@ input,textarea {
   font-family: var(--body-font);
   font-size: 12px;
   
+}
+
+#sum div{
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
 }
 /* fieldset {
 border: none;
